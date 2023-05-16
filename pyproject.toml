@@ -10,6 +10,10 @@ packages = [{include = "brain_games"}]
 python = "^3.10"
 
 
+[tool.poetry.scripts]
+brain-games = "brain_games.scripts.brain_games:main"
+
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
