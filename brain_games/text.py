@@ -8,5 +8,5 @@ def greet():
     return name
 
 
-if __name__ == '__main__':
-    greet()
+def win():
+    print(f'Congratulations, {greet()}!')
