@@ -24,8 +24,9 @@ def solution_game_gcd():
         if solution_game == solution_user:
             print('Correct!')
         else:
-            print(f'''"{solution_user}" is wrong answer ;(. Correct answer was "{solution_game}".
-Let's try again, {name}!''')
+            print(f'"{solution_user}" is wrong answer ;(. '
+                  f'Correct answer was "{solution_game}".')
+            print(f"Let's try again, {name}!")
             break
     else:
         print(f'Congratulations, {name}!')
