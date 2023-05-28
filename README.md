@@ -1,5 +1,7 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/GriNiki/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/GriNiki/python-project-49/actions)
+[![Maintainability](https://api.codeclimate.com/v1/badges/f38c5ea39893016dfeec/maintainability)](https://codeclimate.com/github/GriNiki/python-project-49/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/f38c5ea39893016dfeec/test_coverage)](https://codeclimate.com/github/GriNiki/python-project-49/test_coverage)
 
 
 BRAIN-GAMES:
