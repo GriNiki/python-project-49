@@ -14,6 +14,7 @@ def solution_calc_game():
         numb1_calc_game = randint(1, 35)
         numb2_calc_game = randint(1, 35)
         operation = choice(['+', '-', '*'])
+        solution_game = 0
         if operation == '+':
             solution_game = numb1_calc_game + numb2_calc_game
         elif operation == '-':

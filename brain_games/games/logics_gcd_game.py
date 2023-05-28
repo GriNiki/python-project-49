@@ -19,9 +19,9 @@ def solution_game_gcd():
                 number1_gcd_game = number1_gcd_game % number2_gcd_game
             elif number1_gcd_game < number2_gcd_game:
                 number2_gcd_game = number2_gcd_game % number1_gcd_game
-            else:
-                solution_game = number1_gcd_game
-            solution_game = number1_gcd_game + number2_gcd_game
+            # else:
+            #     solution_game = number1_gcd_game
+        solution_game = number1_gcd_game + number2_gcd_game
         solution_user = int(prompt.string('Your answer: '))
         if solution_game == solution_user:
             print('Correct!')
@@ -31,4 +31,3 @@ Let's try again, {name}''')
             break
     else:
         print(f'Congratulations, {name}!')
-
