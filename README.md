@@ -18,4 +18,4 @@
 	
 	
 Пример того как запускать и играть в игру "Brain-prime". Это небольшая логическая игра в которой необходимо выбрать является число простым или составным.
-	https://asciinema.org/a/ckbXtRhYMSANyE4sHBIQcUCi8
+<script async id="asciicast-ckbXtRhYMSANyE4sHBIQcUCi8" src="https://asciinema.org/a/ckbXtRhYMSANyE4sHBIQcUCi8.js"></script>
