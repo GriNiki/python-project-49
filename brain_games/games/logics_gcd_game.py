@@ -1,32 +1,22 @@
-from brain_games.cli import greet
 from random import randint
-import prompt
 
 
-NUMBER_OF_CORRECT_ANSWER = 3
 GAME_ANSWER = 'Find the greatest common divisor of given numbers.'
 
 
+def calculate_divisor(numb1, numb2):
+    while numb1 != 0 and numb2 != 0:
+        if numb1 > numb2:
+            numb1 = numb1 % numb2
+        elif numb1 < numb2:
+            numb2 = numb2 % numb1
+    solution_game = numb1 + numb2
+    return solution_game
+
+
 def solution_game_gcd():
-    name = greet()
-    print(GAME_ANSWER)
-    for game_count in range(NUMBER_OF_CORRECT_ANSWER):
-        number1_gcd_game = randint(1, 99)
-        number2_gcd_game = randint(1, 99)
-        print(f'Question: {number1_gcd_game} {number2_gcd_game}')
-        while number1_gcd_game != 0 and number2_gcd_game != 0:
-            if number1_gcd_game > number2_gcd_game:
-                number1_gcd_game = number1_gcd_game % number2_gcd_game
-            elif number1_gcd_game < number2_gcd_game:
-                number2_gcd_game = number2_gcd_game % number1_gcd_game
-        solution_game = number1_gcd_game + number2_gcd_game
-        solution_user = int(prompt.string('Your answer: '))
-        if solution_game == solution_user:
-            print('Correct!')
-        else:
-            print(f'"{solution_user}" is wrong answer ;(. '
-                  f'Correct answer was "{solution_game}".')
-            print(f"Let's try again, {name}!")
-            break
-    else:
-        print(f'Congratulations, {name}!')
+    numb1 = randint(1, 99)
+    numb2 = randint(1, 99)
+    print(f'Question: {numb1} {numb2}')
+    solution_game = calculate_divisor(numb1, numb2)
+    return str(solution_game)
