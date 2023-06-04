@@ -14,7 +14,7 @@ def calculate_divisor(numb1, numb2):
     return solution_game
 
 
-def solution_game_gcd():
+def get_game():
     numb1 = randint(1, 99)
     numb2 = randint(1, 99)
     print(f'Question: {numb1} {numb2}')
