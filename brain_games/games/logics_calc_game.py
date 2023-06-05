@@ -5,12 +5,11 @@ GAME_ANSWER = 'What is the result of the expression?'
 
 
 def calculate_expression(numb1, numb2, operation):
-    solution_game = 0
     if operation == '+':
         solution_game = numb1 + numb2
     elif operation == '-':
         solution_game = numb1 - numb2
-    elif operation == '*':
+    else:
         solution_game = numb1 * numb2
     return solution_game
 

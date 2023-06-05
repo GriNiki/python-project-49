@@ -8,15 +8,11 @@ def calculate_prime(numb):
     start_divider = 2
     while numb % start_divider != 0:
         start_divider += 1
-    if numb == start_divider:
-        solution_game = 'yes'
-    else:
-        solution_game = 'no'
-    return solution_game
+    return numb == start_divider
 
 
 def get_game():
     numb = randint(1, 99)
     print(f'Question: {numb}')
-    solution_game = calculate_prime(numb)
+    solution_game = 'yes' if calculate_prime(numb) else 'no'
     return solution_game
