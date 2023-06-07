@@ -2,6 +2,8 @@ from random import randint
 
 
 GAME_ANSWER = 'Find the greatest common divisor of given numbers.'
+START_RANDOM_NUMBER = 1
+STOP_RANDOM_NUMBER = 99
 
 
 def calculate_divisor(numb1, numb2):
@@ -15,8 +17,8 @@ def calculate_divisor(numb1, numb2):
 
 
 def get_game():
-    numb1 = randint(1, 99)
-    numb2 = randint(1, 99)
+    numb1 = randint(START_RANDOM_NUMBER, STOP_RANDOM_NUMBER)
+    numb2 = randint(START_RANDOM_NUMBER, STOP_RANDOM_NUMBER)
     print(f'Question: {numb1} {numb2}')
     solution_game = calculate_divisor(numb1, numb2)
     return str(solution_game)

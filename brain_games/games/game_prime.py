@@ -2,6 +2,8 @@ from random import randint
 
 
 GAME_ANSWER = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+START_RANDOM_NUMBER = 1
+STOP_RANDOM_NUMBER = 99
 
 
 def calculate_prime(numb):
@@ -12,7 +14,7 @@ def calculate_prime(numb):
 
 
 def get_game():
-    numb = randint(1, 99)
+    numb = randint(START_RANDOM_NUMBER, STOP_RANDOM_NUMBER)
     print(f'Question: {numb}')
     solution_game = 'yes' if calculate_prime(numb) else 'no'
     return solution_game
